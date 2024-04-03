@@ -1644,6 +1644,8 @@ img {
   width: 100%;
   max-width: 1452px;
   margin: 0 auto;
+  text-align: center;
+  margin-bottom: 86px;
 }
 
 .pna_system_cont {
@@ -1681,6 +1683,39 @@ img {
 
 .eng_num_cont .txt + .txt {
   margin-top: 122px;
+}
+
+.eng_num_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chk_list {
+  margin-bottom: 214px;
+}
+
+.chk_list .item {
+  position: relative;
+  font-size: 36px;
+  padding-left: calc(77px + 20px);
+  text-align: left;
+}
+
+.chk_list .item + .item {
+  margin-top: 60px;
+}
+
+.chk_list .item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-image: url('../img/chk01.png');
+  width: 77px;
+  height: 52px;
+  background-size: cover;
 }
 
 .font-48 {
